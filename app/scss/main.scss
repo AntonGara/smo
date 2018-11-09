@@ -1,6 +1,22 @@
 @import "vars";
-@import "fonts";
 @import "libs";
+
+// Секции
+@import "header";
+@import "menu";
+@import "banners";
+@import "offers";
+@import "featured";
+@import "info";
+@import "footer";
+@import "services";
+
+// Элементы
+@import "logo";
+@import "title";
+@import "breadcrumbs";
+@import "desc";
+@import "pagination";
 
 ::placeholder {
 	color: #666;
@@ -15,8 +31,8 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
+	line-height: 1.25;
+	font-family: $mont;
 	overflow-x: hidden;
 	color: $text;
 	input, textarea {
@@ -48,6 +64,17 @@ b, strong {
 	font-weight: bold;
 }
 
+.modal {
+    &-content {
+        width: auto;
+        margin: auto;
+    }
+}
+
+@font-face {
+    font-family: Debby;
+    src: url(../fonts/Debby.ttf);
+}
 
 
 @import "media"; // Always at the end

@@ -1,0 +1,13 @@
+.desc {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    &__title {
+        color: #3a3a3a;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__desc {
+        color: #3a3a3a;
+        font-size: 14px;
+    }
+}

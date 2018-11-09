@@ -1,0 +1,18 @@
+.breadcrumbs {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &__items {
+        display: flex;
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    &__link {
+        color: $text;
+        font-size: 12px;
+        font-weight: 600;
+        &:hover {
+            color: $hover;
+            text-decoration: none;
+        }
+    }
+}

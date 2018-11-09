@@ -1,0 +1,25 @@
+.title {
+	font-family: $debby;
+	font-size: 48px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&-white {
+		color: $white;
+	}
+	&:before {
+		content: '';
+		width: 69px;
+		height: 1px;
+		background-color: $title;
+		margin-right: 11px;
+	}
+	&:after {
+		content: '';
+		width: 69px;
+		height: 1px;
+		background-color: $title;
+		margin-left: 11px;
+	}
+}

@@ -1,0 +1,89 @@
+.footer {
+    margin-top: auto;
+    background-color: $text;
+    color: $white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-size: 12px;
+    &__content {
+        justify-content: space-between;
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+        }
+    }
+    &__block {
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        @include media-breakpoint-down(md) {
+            margin-right: 10px;
+            margin-left: 10px;
+            max-width: 100%;
+            width: 100%;
+            align-items: center;
+        }
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+        }
+        &:last-child {
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+    }
+    &__text {
+        margin-bottom: 20px;
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+    }
+    &__info {
+        margin-bottom: 10px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    &__item {
+        margin-bottom: 10px;
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+    }
+    &__link {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: $hover;
+        }
+    }
+    &__phone {
+        font-size: 14px;
+        font-weight: 300;
+        color: $white;
+        &:hover {
+            color: $hover;
+            text-decoration: none;
+        }
+    }
+    &__call {
+        margin-top: 18px;
+        margin-bottom: 25px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 125px;
+        height: 27px;
+        border-radius: 13px;
+        border: 1px solid $white;
+        text-decoration: none;
+        &:hover {
+            color: $hover;
+            border: 1px solid $hover;
+            text-decoration: none;
+        }
+    }
+}

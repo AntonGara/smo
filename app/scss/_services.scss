@@ -1,0 +1,119 @@
+.services {
+    & .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    & .gallery-top {
+        height: 800px;
+        width: 100%;
+        @include media-breakpoint-down(md) {
+            height: 690px;
+        }
+        @include media-breakpoint-down(sm) {
+            height: 510px;
+        }
+        @include media-breakpoint-down(xs) {
+            height: 450px;
+        }
+    }
+    & .gallery-thumbs {
+        height: 270px;
+        box-sizing: border-box;
+        padding: 10px 0;
+        @include media-breakpoint-down(md) {
+            height: 245px;
+        }
+        @include media-breakpoint-down(sm) {
+            height: 185px;
+        }
+        @include media-breakpoint-down(xs) {
+            height: 125px;
+        }
+    }
+    & .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        opacity: 1;
+        background-color: transparent;
+        border: 2px solid $white;
+    }
+    & .swiper-pagination-bullet-active {
+        background: $white;
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1.44px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        margin-bottom: 10px;
+        & p {
+            text-indent: 20px;
+            margin-bottom: 0;
+        }
+    }
+    &__list {
+        margin-left: 40px;
+        margin-top: 20px;
+        @include media-breakpoint-down(xs) {
+            margin-left: 5px;
+        }
+    }
+    &__item {
+        & i {
+            margin-right: 7px;
+        }
+    }
+    &__btn {
+        color: $white;
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        cursor: pointer;
+        z-index: 99;
+        &-next {
+            right: 0;
+        }
+        &-prev {
+            left: 0;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__link {
+        margin-right: 33px;
+        margin-bottom: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        letter-spacing: 0.64px;
+        color: $white;
+        width: 220px;
+        height: 47px;
+        border-radius: 26px;
+        background-image: linear-gradient(-3deg, #0a51e1 0%, #0a79e1 39%, #3bfadd 100%);
+        @include media-breakpoint-down(md) {
+           margin-right: 0;
+        }
+    }
+    &__gallery {
+        margin-bottom: 80px;
+    }
+}
